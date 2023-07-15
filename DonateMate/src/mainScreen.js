@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -55,7 +54,98 @@ function App() {
       </row>
 
       <p class="rowname">AVAILABLE DEVICES</p>
+      <div>
+        <row id="availableDevicesID" style={{marginBottom: '2vh'}}>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+        </row>
+        <row id="availableDevicesID">
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+          <div class="devices">
+            <img class="devicePic" src="phone.png"/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img class="deviceIcon" src="phoneIcon.png"/>
+              <p class="deviceName">Samsung Galaxy S5</p>
+            </row>
+          </div>
+        </row>
+      
 
+      </div>
       
       <p class="rowname">LEND A DEVICE</p>
 
