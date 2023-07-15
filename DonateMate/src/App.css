@@ -15,11 +15,11 @@ header {
   width: 10vh;
   height: 10vh;
   position: absolute;
-  left: 5px;
+  left: 1vh;
 }
 .title {
   font-size: 6vh;
-  margin-top: 2px;
+  margin-top: .5vh;
   text-align: left;
   margin-left: 12vh;
 }
@@ -30,7 +30,49 @@ header {
 }
 .buttonMain {
   background-color: grey;
-  width: 30vh;
-  height: 7vh;
-  margin: 0 20vh 0 20vh;
+  width: 50vh;
+  height: 12vh;
+  margin: 0 20vh 5vh 20vh;
+  border-style: none;
+  border-radius: 2vh;
+  font-size: 4vh;
+}
+.aboutUs {
+  height: 30vh;
+  width: 100%;
+  background-color: grey;
+}
+.abtustxt {
+  font-size: 2vh;
+  color: white;
+}
+.bigNum {
+  font-size: 7vh;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+stat {
+  font-size: 4vh;
+  width: 45vh;
+}
+row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.needwantto {
+  margin-right: 2vh;
+  font-size: 4vh;
+}
+.subbuttons {
+  border-width: 0;
+  border-radius: 3vh;
+  width: 20vh;
+  height: 6vh;
+  align-self: center;
+  background-color: #ebd879;
+}
+.rowname {
+  font-size: 5vh;
+  text-align: start;
 }
