@@ -9,6 +9,7 @@ function App() {
         <img class="logo" src="logo.png"/>
         <p class="title">Donate Mate</p>
       </header>
+
       <div class="buttonRow">
         <button id="needDevice" class="buttonMain">
           Need a device?
@@ -18,6 +19,46 @@ function App() {
         </button>
       </div>
       
+      <div class="aboutUs">
+        <p class="abtustxt">
+          <p style={{fontSize: '3vh', color: '#D4D4D4'}}>About us
+        </p>
+        <br/>Donate Mate description</p>
+      </div>
+
+      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+        <stat>
+          <p class="bigNum">35</p>
+          pick up and drop off locations across the USA
+        </stat>
+        <stat>
+          <p class="bigNum">200{'+'}</p>
+          devices recycled & reused!
+        </stat>
+        <stat>
+          <p class="bigNum">128</p>
+          devices shared by the community
+        </stat>
+
+
+        
+      </div>
+      <row>
+        <row style={{margin: '0 8vh 0 8vh'}}>
+          <p class="needwantto">Need to borrow?</p>
+          <button class="subbuttons">Make a request</button> 
+        </row>
+        <row style={{margin: '0 8vh 0 8vh'}}>
+          <p class="needwantto">Want to donate?</p>
+          <button class="subbuttons">Plan a donation</button> 
+        </row>
+      </row>
+
+      <p class="rowname">AVAILABLE DEVICES</p>
+
+      
+      <p class="rowname">LEND A DEVICE</p>
+
 
     </div>
   );
