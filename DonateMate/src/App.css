@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #EEEEEE;
 }
 header {
   background-color: #89A9B3;
@@ -75,4 +76,33 @@ row {
 .rowname {
   font-size: 5vh;
   text-align: start;
+  margin-left: 2vh;
+  margin-bottom: 1vh;
+}
+.devices {
+  margin-left: 2vh;
+  height: 30vh;
+  width: 30vh;
+  background-color: white;
+  border-radius: 2vh;
+  filter: drop-shadow(0 2px 2px #00000046);
+}
+.devicePic {
+  height: 20vh;
+  margin-top: 2vh;
+}
+.deviceIcon {
+  height: 4vh;
+  margin: 0 0 0 1vh;
+}
+.deviceName {
+  margin: 0 2vh 0 0;
+}
+.requests {
+  margin-left: 2vh;
+  height: 15vh;
+  width: 30vh;
+  background-color: white;
+  border-radius: 2vh;
+  filter: drop-shadow(0 2px 2px #00000046);
 }
