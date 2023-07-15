@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+header {
+  background-color: #89A9B3;
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+}
+.logo {
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  left: 5px;
+}
+.title {
+  font-size: 6vh;
+  margin-top: 2px;
+  text-align: left;
+  margin-left: 12vh;
+}
+.buttonRow {
+  flex-direction: row;
+  margin-top: 15vh;
+  justify-content: space-between;
+}
+.buttonMain {
+  background-color: grey;
+  width: 30vh;
+  height: 7vh;
+  margin: 0 20vh 0 20vh;
+}
