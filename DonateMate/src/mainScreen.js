@@ -2,11 +2,11 @@ import './mainScreen.css';
 import logo from "./images/logo.png"
 import usaFlag from "./images/usa.png"
 import mainImg from "./images/mainImg.png"
-import React, {useState} from 'react';
+import React from 'react';
 import YoutubeEmbed from './youtubeEmbed';
 import { Link } from 'react-router-dom';
-function App() {
 
+function App() {
 
   return (
     
@@ -18,25 +18,14 @@ function App() {
         </div>
         <img className="logo"  alt="donation box" src={logo}/>
       </header>
-
-      <div className="buttonRow">
-        <Link target={"_blank"} to={"https://forms.gle/y7QJjUBmKSo21nUL8"} id="needDevice" className="buttonMain" >
-          Need a device?
-        </Link>
-        <Link target={"_blank"} to={"https://forms.gle/wrLij24iqBhx57oF9"} id="giveDevice" className="buttonMain" >
-          Donate or Share
-        </Link>
-      </div>
-
-
-      <div className='mainImg-div'>
-        <img className="mainImg" src={mainImg}/>
-      </div>
+      
+      <img className="mainImg" src={mainImg}/>
+      
       
       <div className="aboutUs">
         <div className="abtustxt">
           <h1>About us</h1>
-          <p>DLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae maximus ligula, pretium semper erat. Quisque fringilla augue vitae tincidunt bibendum. Vivamus finibus ante tincidunt, mollis nibh vel, rutrum leo.</p>
+          <p>Donate Mate is a student-led organization that aims at reducing electronic waste and providing the underprivileged with devices. This is done by donating devices that are no longer in use, our platform not only allows you to donate devices but also allows you to lend devices for a specified amount of time. Together with DONATE MATE, we hope to create a greener environment and help others achieve their dreams!</p>
         </div>
       </div>
 
@@ -65,100 +54,101 @@ function App() {
       <row>
         <row style={{margin: '0 8vh 0 8vh'}}>
           <p className="needwantto">Need to borrow?</p>
-          <Link target={"_blank"} to={"https://forms.gle/y7QJjUBmKSo21nUL8"} className="subbuttons" >Make a request</Link> 
+          <Link target={"_blank"} to={"https://forms.gle/y7QJjUBmKSo21nUL8"} className="subbuttons" >Need a device?</Link>
         </row>
+        
         <row style={{margin: '0 8vh 0 8vh'}}>
           <p className="needwantto">Want to donate?</p>
-          <Link target={"_blank"} to={"https://forms.gle/wrLij24iqBhx57oF9"} className="subbuttons" >Plan a donation</Link> 
+          <Link target={"_blank"} to={"https://forms.gle/wrLij24iqBhx57oF9"} className="subbuttons" >Plan a donation</Link>
         </row>
       </row>
 
       <p className="rowname">AVAILABLE DEVICES</p>
-      <div>
+      <div style={{width: '98vw'}}>
         <row id="availableDevicesID" style={{marginBottom: '2vh'}}>
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/phone.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/laptop.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/laptopIcon.png")}/>
+              <p className="deviceName">MacBook Air 15 2012</p>
+            </row>
+          </div>
+          <div className="devices">
+            <img className="devicePic" src={require("./images/phone.png")}/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/phone.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/laptop.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
-              <p className="deviceName">Samsung Galaxy S5</p>
+              <img className="deviceIcon" src={require("./images/laptopIcon.png")}/>
+              <p className="deviceName">Dell Chromebook</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/laptop.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
-              <p className="deviceName">Samsung Galaxy S5</p>
-            </row>
-          </div>
-          <div className="devices">
-            <img className="devicePic" src="phone.png"/>
-            <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
-              <p className="deviceName">Samsung Galaxy S5</p>
+              <img className="deviceIcon" src={require("./images/laptopIcon.png")}/>
+              <p className="deviceName">Kindle Fire A215 Pro</p>
             </row>
           </div>
         </row>
         <row id="availableDevicesID">
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/phone.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/phone.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" src="phone.png"/>
+            <img className="devicePic" src={require("./images/laptop.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" alt ="phone" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/laptopIcon.png")}/>
+              <p className="deviceName">Dell Latitude E7273</p>
+            </row>
+          </div>
+          <div className="devices">
+            <img className="devicePic" src={require("./images/phone.png")}/>
+            <row style={{margin: '1vh 0 0 0'}}>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" alt='phone' src="phone.png"/>
+            <img className="devicePic" src={require("./images/phone.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" alt="phone" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
           <div className="devices">
-            <img className="devicePic" alt="phone" src="phone.png"/>
+            <img className="devicePic" src={require("./images/phone.png")}/>
             <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" alt="phone" src="phoneIcon.png"/>
-              <p className="deviceName">Samsung Galaxy S5</p>
-            </row>
-          </div>
-          <div className="devices">
-            <img className="devicePic" alt="phone" src="phone.png"/>
-            <row style={{margin: '1vh 0 0 0'}}>
-              <img className="deviceIcon" src="phoneIcon.png"/>
+              <img className="deviceIcon" src={require("./images/phoneIcon.png")}/>
               <p className="deviceName">Samsung Galaxy S5</p>
             </row>
           </div>
@@ -168,48 +158,60 @@ function App() {
       </div>
       
       <p class="rowname">LEND A DEVICE</p>
-      <row>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-      </row>
-      <row style={{marginTop: '2vh'}}>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-        <div class="requests">
-          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
-        </div>
-      </row>
-
-
+      <div style={{width: '98vw'}}>
+        <row>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/laptopIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/phoneIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Phone</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/laptopIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/laptopIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/phoneIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Phone</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/laptopIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+          </div>
+        </row>
+        <row style={{marginTop: '2vh'}}>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/phoneIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Phone</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/laptopIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/phoneIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Phone</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/laptopIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/laptopIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+          </div>
+          <div class="requests">
+            <img className="deviceIconLend" src={require("./images/phoneIcon.png")}/>
+            <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Phone</p>
+          </div>
+        </row>
+      </div>
     </div>
   );
 }
