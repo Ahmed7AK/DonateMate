@@ -1,6 +1,8 @@
 .App {
   background-image: url("https://img.myloview.ru/posters/delivery-box-background-cargo-package-seamless-pattern-various-open-and-closed-cardboard-boxes-parcel-flat-line-icons-warehouse-storage-vector-illustration-brown-white-color-700-195090247.jpg");
   background-repeat: repeat-x;
+  background-size: 70vh, 100vw;
+  background-color: #f3f2dc;
 }
 header {
   display: flex;
@@ -13,7 +15,6 @@ header {
 .logo {
   height: 10vh;
 }
-
 .flag-div {
   display: flex;
   justify-content: center;
@@ -34,31 +35,15 @@ header {
   text-align: left;
   margin-left: 12vh;
 }
-.buttonRow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10vh;
-  justify-content: space-between;
-}
-.buttonMain {
-  background-color: #F3D771;
-  width: 60vh;
-  height: 12vh;
-  margin: 5vh 20vh 5vh 20vh;
-  border-style: none;
-  border-radius: 2vh;
-  font-size: 4vh;
-}
-
-.mainImg-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-}
 .mainImg {
-  width: 50vw;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 35vw 20px 35vw;
+  border-radius: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #F3D771;
 }
 .aboutUs {
   display: flex;
@@ -72,7 +57,7 @@ header {
 .abtustxt {
   text-align: center;
   font-size: 2.5vh;
-  width: 40vw;
+  width: 60vw;
   color: #FFFFFF;
 }
 .abtustxt h1 {
@@ -87,7 +72,9 @@ header {
 }
 stat {
   font-size: 4vh;
-  width: 45vh;
+  width: 30vw;
+  text-align: center;
+  margin-bottom: 8vh;
 }
 row {
   display: flex;
@@ -107,11 +94,12 @@ row {
 .subbuttons {
   border-width: 0;
   border-radius: 3vh;
-  width: 20vh;
-  height: 6vh;
+  width: 25vh;
+  height: 7vh;
   align-self: center;
-  background-color: #ebd879;
+  background-color:rgb(151, 196, 255);
   font-size: 2.5vh;
+  filter: drop-shadow(2px 2px 2px #00000046);
 }
 .rowname {
   font-size: 5vh;
@@ -129,14 +117,14 @@ row {
 }
 .devicePic {
   height: 20vh;
-  margin-top: 2vh;
+  align-self: center;
 }
 .deviceIcon {
   height: 4vh;
   margin: 0 0 0 1vh;
 }
 .deviceName {
-  margin: 0 2vh 0 0;
+  margin: 0 0 0 0;
   font-size: 2.5vh;
 }
 .requests {
@@ -146,25 +134,53 @@ row {
   background-color: white;
   border-radius: 2vh;
   filter: drop-shadow(0 2px 2px #00000046);
+  display: flex;
+  justify-content: row;
 }
-
+.requesttxt {
+  margin: 5vh 0 0 10px;
+}
+.lendname {
+  font-size: 3.5vh;
+  margin: 4vh 0 0 0;
+}
+.deviceIconLend {
+  height: 5vh;
+  margin: 5vh 0 0 2px;
+}
 /*forms*/
 .form {
   width: 50vw;
   height: 95vh;
-  background-color: #89A9B3;
-  top: 200vh;
+  background-color:#ebd879;
+  top: 280vh;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
   border-radius: 2vh;
   filter: drop-shadow(2px 2px 5px rgb(50, 50, 50));
+  border-width: 1px;
+  border-style: solid;
+}
+.bigLet {
+  font-size: 4vh;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-left: 2.7vw;
+}
+.formlogo {
+  height: 10vh;
+  margin: 10px 0 0 20vw;
+}
+.formlogoname {
+  margin: 0 20vw 0 0;
+  font-size: 4vh;
 }
 .emailtxt {
   background-color: white;
   color: #4d4d4d;
   font-size: 3vh;
-  margin: 5vh 15% 0 15%;
+  margin: 5vh 2.5vw 0 2.5vw;
   width: 70%;
   height: 7vh;
   border-radius: 10px;
@@ -172,12 +188,12 @@ row {
 }
 .needDevices {
   background-color: white;
-  color: rgb(62, 62, 62);
-  font-size: 4vh;
+  color: rgb(82, 82, 82);
+  font-size: 3vh;
   width: 15vw;
   height: 7vh;
   border-radius: 10px;
-  margin: 3vh 3% 0 3%;
+  margin: 3vh 2.5vw 0 2.5vw;
   border-style: none;
 }
 .dropdown {
@@ -185,18 +201,18 @@ row {
   color: #5e5e5e;
   font-size: 3vh;
   text-align: center;
-  margin: 2vh 15% 0 15%;
-  width: 70%;
+  margin: 2vh 5% 0 5%;
+  width: 90%;
   height: 7vh;
-  border-radius: 10px; 
-  border-width: 0;
+  border-radius: 10px;
+  border-style: none;
 }
 .situcond {
   background-color: white;
   color: #4d4d4d;
   font-size: 2vh;
-  margin: 0 15% 0 15%;
-  width: 70%;
+  margin: 0 5% 0 5%;
+  width: 90%;
   height: 12vh;
   border-radius: 10px;
   border-style: none;
@@ -219,5 +235,6 @@ row {
   border-radius: 5px;
   margin: 2% 3vw 0 3vw;
   font-size: 3vh;
-  background-color: #ebd879;
+  background-color: #5A96E3;
 }
+
