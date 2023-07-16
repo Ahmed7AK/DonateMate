@@ -1,7 +1,41 @@
 import './App.css';
+import React, { useState } from 'react';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const Modal = ({ setIsOpen }) => {
+    return (
+      <>
+      <div class="form">
+        <input class="emailtxt" type='email' placeholder='Enter email address'/>
+        <p class="bigNum" style={{marginTop: '3vh'}}>What do you need?</p>
+        <row>
+          <button class="needDevices">Phone</button>
+          <button class="needDevices">Laptop</button>
+          <button class="needDevices" style={{color: '#4d4d4d'}}>Other</button>
+        </row>
+        <p class="bigNum" style={{marginTop: '2vh'}}>Where?</p>
+        <select class="dropdown">
+          <option>Select a pick-up location</option>
+          <option>123 Address Dr</option>
+          <option>321 Address Dr</option>
+          <option>132 Address Dr</option>
+          <option>312 Address Dr</option>
+        </select>
+        <p class="bigNum" style={{marginTop: '2vh', marginBottom: '2vh'}}>Why?</p>
+        <input class="situcond" type="text" placeholder='Describe your situation (What is the device for?)'/>
+        <row style={{marginTop: '1.5vh'}}>
+          <button class="back" onClick={() => setIsOpen(false)}>Back</button>
+          <button class="submit" onClick={() => setIsOpen(false)}>Submit</button>
+        </row>
+        
+      </div>
+      </>
+    );
+  };
+
   return (
+    
     <div className="App">
 
       <header>
@@ -10,13 +44,14 @@ function App() {
       </header>
 
       <div class="buttonRow">
-        <button id="needDevice" class="buttonMain">
+        <button id="needDevice" class="buttonMain" onClick={() => setIsOpen(true)}>
           Need a device?
         </button>
-        <button id="giveDevice" class="buttonMain">
+        <button id="giveDevice" class="buttonMain" onClick={() => setIsOpen(true)}>
           Donate or Share
         </button>
       </div>
+      <img class="mainPic" src="mainImage.png"/>
       
       <div class="aboutUs">
         <p class="abtustxt">
@@ -148,7 +183,9 @@ function App() {
       </div>
       
       <p class="rowname">LEND A DEVICE</p>
+      <div class="requests"></div>
 
+      <Modal/>
 
     </div>
   );
