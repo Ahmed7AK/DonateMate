@@ -6,7 +6,75 @@ import React from 'react';
 import YoutubeEmbed from './youtubeEmbed';
 
 function App() {
-
+  const [isOpenR, setIsOpenR] = useState(false);
+  const RequestForm = ({ setIsOpenR }) => {
+   return (
+      <>
+      <div class="form">
+        <row>
+          <img class="formlogo" src="logo.png"/>
+          <p class="formlogoname">Donate Mate</p>
+        </row>
+        
+        <input class="emailtxt" type='email' placeholder='Enter email address'/>
+        <p class="bigLet" style={{marginTop: '3vh'}}>What do you need?</p>
+        <row>
+          <button class="needDevices">Phone</button>
+          <button class="needDevices">Laptop</button>
+          <button class="needDevices" style={{color: '#4d4d4d', borderStyle: 'solid', borderColor: '#a1a1a1'}}>Other</button>
+        </row>
+        <p class="bigLet" style={{marginTop: '2vh'}}>Where?</p>
+        <select class="dropdown">
+          <option>Select a pick-up location</option>
+          <option>123 Address Dr</option>
+          <option>321 Address Dr</option>
+          <option>132 Address Dr</option>
+          <option>312 Address Dr</option>
+        </select>
+        <p class="bigLet" style={{marginTop: '2vh', marginBottom: '2vh'}}>Why?</p>
+        <input class="situcond" type="text" placeholder='Describe your situation (What is the device for?)'/>
+        <row style={{marginTop: '1.5vh'}}>
+          <button class="back" onClick={() => setIsOpenR(false)}>Back</button>
+          <button class="submit" onClick={() => setIsOpenR(false)}>Submit</button>
+        </row>
+      </div>
+      </>
+    );
+  };
+  const [isOpenD, setIsOpenD] = useState(false);
+  const DonateForm = ({ setIsOpenD }) => {
+    return (
+      <>
+      <div class="form">
+        <row>
+          <img class="formlogo" src="logo.png"/>
+          <p class="formlogoname">Donate Mate</p>
+        </row>
+        <input class="emailtxt" type='email' placeholder='Enter email address'/>
+        <p class="bigLet" style={{marginTop: '3vh'}}>What do you have?</p>
+        <row>
+          <button class="needDevices">Phone</button>
+          <button class="needDevices">Laptop</button>
+          <button class="needDevices" style={{color: '#4d4d4d'}}>Other</button>
+        </row>
+        <p class="bigLet" style={{marginTop: '2vh'}}>Where?</p>
+        <select class="dropdown">
+          <option>Select a drop-off location</option>
+          <option>123 Address Dr</option>
+          <option>321 Address Dr</option>
+          <option>132 Address Dr</option>
+          <option>312 Address Dr</option>
+        </select>
+        <p class="bigLet" style={{marginTop: '2vh', marginBottom: '2vh'}}>Condition</p>
+        <input class="situcond" type="text" placeholder='Describe device condition (Is there any damage?)'/>
+        <row style={{marginTop: '1.5vh'}}>
+          <button class="back" onClick={() => setIsOpenD(false)}>Back</button>
+          <button class="submit" onClick={() => setIsOpenD(false)}>Submit</button>
+        </row>
+      </div>
+      </>
+    );
+  };
 
   return (
     
@@ -20,13 +88,15 @@ function App() {
       </header>
 
       <div className="buttonRow">
-        <button id="needDevice" className="buttonMain">
+        <button id="needDevice" className="buttonMain" onClick={() => setIsOpenR(true)}>
           Need a device?
         </button>
-        <button id="giveDevice" className="buttonMain">
+        <button id="giveDevice" className="buttonMain" onClick={() => setIsOpenD(true)}>
           Donate or Share
         </button>
       </div>
+        {isOpenR && <RequestForm setIsOpenR={setIsOpenR}/>}
+        {isOpenD && <DonateForm setIsOpenD={setIsOpenD}/>}
 
       <div className='mainImg-div'>
         <img className="mainImg" src={mainImg}/>
@@ -64,11 +134,11 @@ function App() {
       <row>
         <row style={{margin: '0 8vh 0 8vh'}}>
           <p className="needwantto">Need to borrow?</p>
-          <button className="subbuttons">Make a request</button> 
+          <button className="subbuttons" onClick={() => setIsOpenR(true)}>Make a request</button> 
         </row>
         <row style={{margin: '0 8vh 0 8vh'}}>
           <p className="needwantto">Want to donate?</p>
-          <button className="subbuttons">Plan a donation</button> 
+          <button className="subbuttons" onClick={() => setIsOpenD(true)}>Plan a donation</button> 
         </row>
       </row>
 
@@ -166,10 +236,50 @@ function App() {
 
       </div>
       
-      <p className="rowname">LEND A DEVICE</p>
-      <div className="requests"></div>
+      <p class="rowname">LEND A DEVICE</p>
+      <row>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+      </row>
+      <row style={{marginTop: '2vh'}}>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+        <div class="requests">
+          <p class="requesttxt">Need:</p><p class="lendname">&nbsp;Laptop</p>
+        </div>
+      </row>
 
-
+      {isOpenR && <RequestForm setIsOpenR={setIsOpenR}/>}
+      {isOpenD && <DonateForm setIsOpenD={setIsOpenD}/>}
     </div>
   );
 }
