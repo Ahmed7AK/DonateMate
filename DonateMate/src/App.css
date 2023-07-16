@@ -26,14 +26,14 @@ header {
 }
 .buttonRow {
   flex-direction: row;
-  margin-top: 15vh;
+  margin-top: 10vh;
   justify-content: space-between;
 }
 .buttonMain {
   background-color: grey;
   width: 50vh;
   height: 12vh;
-  margin: 0 20vh 5vh 20vh;
+  margin: 5vh 20vh 5vh 20vh;
   border-style: none;
   border-radius: 2vh;
   font-size: 4vh;
@@ -72,6 +72,7 @@ row {
   height: 6vh;
   align-self: center;
   background-color: #ebd879;
+  font-size: 2.5vh;
 }
 .rowname {
   font-size: 5vh;
@@ -97,6 +98,7 @@ row {
 }
 .deviceName {
   margin: 0 2vh 0 0;
+  font-size: 2.5vh;
 }
 .requests {
   margin-left: 2vh;
@@ -105,4 +107,80 @@ row {
   background-color: white;
   border-radius: 2vh;
   filter: drop-shadow(0 2px 2px #00000046);
+}
+.mainPic {
+  width: 100vh;
+}
+/*forms*/
+.form {
+  width: 50vw;
+  height: 95vh;
+  background-color: #89A9B3;
+  top: 200vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 2vh;
+  filter: drop-shadow(2px 2px 5px rgb(50, 50, 50));
+}
+.emailtxt {
+  background-color: white;
+  color: #4d4d4d;
+  font-size: 3vh;
+  margin: 5vh 15% 0 15%;
+  width: 70%;
+  height: 7vh;
+  border-radius: 10px;
+  border-style: none;
+}
+.needDevices {
+  background-color: white;
+  color: rgb(62, 62, 62);
+  font-size: 4vh;
+  width: 15vw;
+  height: 7vh;
+  border-radius: 10px;
+  margin: 3vh 3% 0 3%;
+  border-style: none;
+}
+.dropdown {
+  background-color: white;
+  color: #5e5e5e;
+  font-size: 3vh;
+  text-align: center;
+  margin: 2vh 15% 0 15%;
+  width: 70%;
+  height: 7vh;
+  border-radius: 10px; 
+  border-width: 0;
+}
+.situcond {
+  background-color: white;
+  color: #4d4d4d;
+  font-size: 2vh;
+  margin: 0 15% 0 15%;
+  width: 70%;
+  height: 12vh;
+  border-radius: 10px;
+  border-style: none;
+  text-align: center;
+}
+.back {
+  width: 10vw;
+  height: 5.5vh;
+  background-color: rgba(0, 0, 0, .5);
+  border-style: none;
+  border-radius: 5px;
+  margin: 2% 3vw 0 3vw;
+  font-size: 3vh;
+  color: white;
+}
+.submit {
+  width: 13vw;
+  height: 5.5vh;
+  border-style: none;
+  border-radius: 5px;
+  margin: 2% 3vw 0 3vw;
+  font-size: 3vh;
+  background-color: #ebd879;
 }
