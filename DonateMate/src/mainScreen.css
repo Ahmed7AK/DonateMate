@@ -1,22 +1,32 @@
 .App {
-  text-align: center;
-  background-color: #EEEEEE;
+  background-image: url("https://img.myloview.ru/posters/delivery-box-background-cargo-package-seamless-pattern-various-open-and-closed-cardboard-boxes-parcel-flat-line-icons-warehouse-storage-vector-illustration-brown-white-color-700-195090247.jpg");
+  background-repeat: repeat-x;
 }
 header {
-  background-color: #89A9B3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4D7FB8;
   height: 10vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  flex-direction: row;
+  padding: 10px;  
 }
 .logo {
-  width: 10vh;
   height: 10vh;
+}
+
+.flag-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
   position: absolute;
-  left: 1vh;
+  left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #93B8E7;
+}
+.usFlag {
+  height: 6vh;
 }
 .title {
   font-size: 6vh;
@@ -25,27 +35,50 @@ header {
   margin-left: 12vh;
 }
 .buttonRow {
-  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10vh;
   justify-content: space-between;
 }
 .buttonMain {
-  background-color: grey;
-  width: 50vh;
+  background-color: #F3D771;
+  width: 60vh;
   height: 12vh;
   margin: 5vh 20vh 5vh 20vh;
   border-style: none;
   border-radius: 2vh;
   font-size: 4vh;
 }
+
+.mainImg-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.mainImg {
+  width: 50vw;
+}
 .aboutUs {
+  display: flex;
   height: 30vh;
   width: 100%;
-  background-color: grey;
+  background-color: #5A96E3;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .abtustxt {
-  font-size: 2vh;
-  color: white;
+  text-align: center;
+  font-size: 2.5vh;
+  width: 40vw;
+  color: #FFFFFF;
+}
+.abtustxt h1 {
+  color: #F3D771;
+  margin: 0;
+  padding: 0;
 }
 .bigNum {
   font-size: 7vh;
@@ -60,6 +93,12 @@ row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.video-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 .needwantto {
   margin-right: 2vh;
@@ -108,9 +147,7 @@ row {
   border-radius: 2vh;
   filter: drop-shadow(0 2px 2px #00000046);
 }
-.mainPic {
-  width: 100vh;
-}
+
 /*forms*/
 .form {
   width: 50vw;
